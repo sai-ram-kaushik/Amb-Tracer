@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "626885003372",
+    "project_id": "ambtracer",
+    "storage_bucket": "ambtracer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626885003372:android:1ee88c13b7a03434e8b049",
+        "android_client_info": {
+          "package_name": "com.example.ambtracer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626885003372-h7a3g6ec71c8sn3fev1vja951lr94gb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ambtracer",
+            "certificate_hash": "b5836bd3079e6bcfeb337efdc517b7a40e7523cd"
+          }
+        },
+        {
+          "client_id": "626885003372-msrkcg1hv48667lu8fm91h0jjjuuo94a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxG_3J3bEi7GCBLXBhwnVdOl_JJMz4Jxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626885003372-msrkcg1hv48667lu8fm91h0jjjuuo94a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
