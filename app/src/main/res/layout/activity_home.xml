@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome"
+        android:text="Welcome to AmbTracer"
         android:layout_centerHorizontal="true"
         android:textSize="34dp"
         android:textColor="#FFA500"
@@ -17,14 +17,61 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Name"
-    android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/name"
     android:textSize="34sp"
     android:textColor="#FFA500"
         tools:ignore="HardcodedText" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/edit"
+            android:drawablePadding="10dp"
+            android:hint="Source"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#FFA500"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:drawablePadding="10dp"
+            android:hint="Destination"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="#FFA500"
+            tools:ignore="Autofill" />
+
+        <Button
+            android:id="@+id/nav"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:onClick="openMapView"
+            android:text="Navigate to Maps"
+            android:textColor="#fff" />
+    </LinearLayout>
     <Button
         android:id="@+id/SignOut"
         android:layout_width="wrap_content"

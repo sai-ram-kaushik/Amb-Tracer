@@ -2,6 +2,7 @@ package com.example.ambtracer;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -30,6 +31,18 @@ public class HomeActivity extends AppCompatActivity {
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
+
+
+        Button btn = findViewById(R.id.nav);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMapView();
+            }
+        });
+
+
+
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if(acct !=null){
             String UserName = acct.getDisplayName();
@@ -37,9 +50,22 @@ public class HomeActivity extends AppCompatActivity {
         }
         SignOutBtn.setOnClickListener(view -> signOut());
     }
+
+    public void openMapView(View view) {
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.google. android. gms. maps");
+        if (launchIntent != null) {
+            startActivity(launchIntent);
+        }
+    }
+
+
+
     void signOut(){
         gsc.signOut().addOnCompleteListener(task -> {
             startActivity(new Intent(HomeActivity.this, LoginActivity.class));
         });
+    }
+    void openMapView(){
+        startActivity(new Intent(HomeActivity.this, MapView.class));
     }
 }
