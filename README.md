@@ -5,5 +5,5 @@
 # Contributors
 
 - Subhranshu Mohapatra
-- Jai Agarwal
+- Jai Aggarwal
 - Sairam Kaushik
