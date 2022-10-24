@@ -5,5 +5,5 @@
 # Contributors
 
 - Subhranshu Mohapatra
-- Jai Aggarwal
-- Sairam Kaushik
+- Jai Aggarwal - https://github.com/Jaiaggarwaaaaal/Jaiaggarwaaaaal
+- Sairam Kaushik - https://github.com/sai-ram-kaushik
